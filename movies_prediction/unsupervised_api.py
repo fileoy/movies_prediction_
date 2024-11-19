@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 import joblib
-model = joblib.load('kmeans_model.joblib')
-scaler = joblib.load('scaler.joblib')
+model = joblib.load('./movies_presiction/kmeans_model.joblib')
+scaler = joblib.load('./movies_prediction/scaler.joblib')
 app = FastAPI()
 
 
